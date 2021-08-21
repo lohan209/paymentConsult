@@ -16,6 +16,7 @@
 <body>
   <div class="container">
     <div class="box">
+    <img src="img/consultss2.PNG" alt="Consults logo"><br>
     <input type="text" id="fname" name="fname" value=""  placeholder="E-mail/Matrícula"><br>
     <input type="password" id="fname" name="fname" value=""  placeholder="Senha"><br>
     <br>

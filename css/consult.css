@@ -7,7 +7,7 @@ ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #ebeeee;
+  background-color: #F6F6F6;
 }
 
 li {
@@ -17,7 +17,7 @@ li {
 
 #logo{
   display: block;
-  color: #00a335;
+  color: #45c7b0;
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
@@ -30,24 +30,27 @@ li:last-child {
 
 li a {
   display: block;
-  color: #00a335;
+  color: #45c7b0;
   text-align: center;
+  margin-top: 35px;
   padding: 14px 25px;
   text-decoration: none;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 li a:hover:not(.active) {
-  background-color: #bedcbc;
+  color: white;
+  background-color: #87D0C3;
 }
 
 .active {
-  background-color: #bedcbc;
+  color: white;
+  background-color: #87D0C3;
 }
 
 .button {
   border: none;
-  color: #00a335;
+  color: #45c7b0;
   padding: 8px 64px;
   text-align: center;
   text-decoration: none;
@@ -62,12 +65,12 @@ li a:hover:not(.active) {
 }
 
 .buscar {
-  background-color: #00a335;
+  background-color: #45c7b0;
   color: white;
 }
 
 .buscar:hover {
-  background-color: #bedcbc;
+  background-color: #349482;
   color: white;
 }
 

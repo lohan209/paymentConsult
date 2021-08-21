@@ -1,12 +1,12 @@
 body{
   font-family: 'Nunito Sans', sans-serif;;
-  background-color: #EBEEEe;
+  background-color: #F6F6F6;
 
 }
 
 .button {
   border: none;
-  color: #00a335;
+  color: #45c7b0;
   width: 300px;
   height: 45px;
   text-align: center;
@@ -21,23 +21,23 @@ body{
 }
 
 .login {
-  background-color: #00a335;
+  background-color: #45c7b0;
   color: white;
 }
 
 .login:hover {
-  background-color: #bedcbc;
+  background-color: #349482;
   color: white;
 }
 
 .cadastrar{
-  background-color: #EBEEEe;
+  background-color: #F6F6F6;
 }
 
 .container {
 width: 100vw;
 height: 80vh;
-background-color: #EBEEEe;
+background-color: #F6F6F6;
 display: flex;
 flex-direction: row;
 justify-content: center;
