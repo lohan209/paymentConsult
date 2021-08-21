@@ -17,7 +17,7 @@
   <div class="container">
     <div class="box">
     <input type="text" id="fname" name="fname" value=""  placeholder="E-mail/Matrícula"><br>
-    <input type="text" id="fname" name="fname" value=""  placeholder="Senha"><br>
+    <input type="password" id="fname" name="fname" value=""  placeholder="Senha"><br>
     <br>
     <button class="button login" type="button" onclick="window.location.href='consult/clientes.html'">Entrar</button><br>
     <button class="button cadastrar" type="button" onclick="window.location.href='register.html'">Cadastrar</button>

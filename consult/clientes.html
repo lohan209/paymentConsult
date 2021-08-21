@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   <link rel="stylesheet" href="../css/consult.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +25,19 @@
 
   <div class="container">
     <div class="box">
-    <input type="text" id="fname" name="fname" value="" maxlength="11" placeholder="Digite o CPF do usuário"><br>
+    <input type="text" onkeypress="$(this).mask('000.000.000-00');" name="cpf" placeholder="Digite o CPF do usuário"><br>
     <br>
-    <button class="button buscar" type="button" onclick="alert('Hello world!')">Buscar</button>
+    <button id="buscar" class="button buscar" type="button">Buscar</button>
     </div>
   </div>
+
+  <script>
+  document.getElementById("buscar").addEventListener("click", verificarValidade);
+
+  function verificarValidade() {
+    alert ("Cliente inválido");
+  }
+  </script>
+
 </body>
 </html>

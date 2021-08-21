@@ -26,8 +26,16 @@
     <div class="box">
     <input type="text" id="fname" name="fname" value="" maxlength="11" placeholder="Digite o CPF do usuário"><br>
     <br>
-    <button class="button buscar" type="button" onclick="alert('Hello world!')">Buscar</button>
+    <button id="buscar" class="button buscar" type="button">Buscar</button>
     </div>
   </div>
-</body>
+
+  <script>
+  document.getElementById("buscar").addEventListener("click", verificarValidade);
+
+  function verificarValidade() {
+    alert ("Cliente inválido");
+  }
+  </script>
+
 </html>
