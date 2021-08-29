@@ -18,7 +18,7 @@
 
   <div class="container">
     <div class="box">
-    <img src="img/consults_logo.svg" alt="Consults logo"><br>
+    <img src="img/consults_logo.svg" alt="Consults logo"><br><br>
     <form id="frmLogin">
       <input type="email" id="email" onblur="validacaoEmail(frmRegister.email)" placeholder="E-mail"><br>
       <input type="password" id="senha" minlength="8" required maxlength="32" placeholder="Senha"><br><br>
@@ -32,7 +32,7 @@
   <script>
   document.getElementById("login").addEventListener("click", function(){changePage("consult/clientes.html");});
   document.getElementById("register").addEventListener("click", function(){changePage("register.html");});
-  
+
   function changePage(page) {
     location.href = page;
   }

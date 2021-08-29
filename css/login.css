@@ -54,6 +54,18 @@ align-items: center
   align-self: center;
 }
 
+img{
+    align-content: center;
+    width: 50%
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [id="logo"] {
+    width: 100%;
+  }
+}
+
 body {
   margin: 0px;
 }
