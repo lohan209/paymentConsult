@@ -14,18 +14,30 @@
 </head>
 
 <body>
+  <script src="validation.js"></script>
+
   <div class="container">
     <div class="box">
-    <img src="img/consults_logo.svg" alt="Consults logo"><br>
-    <input type="text" id="fname" name="fname" value=""  placeholder="E-mail/Matrícula"><br>
-    <input type="password" id="fname" name="fname" value="" minlength="8" required maxlength="32" placeholder="Senha"><br>
-    <input type="password" id="fname" name="fname" value=""  minlength="8" required maxlength="32" placeholder="Confirmar senha"><br>
-    <input type="text" id="fname" name="fname" value=""  placeholder="E-mail de recuperação"><br>
-    <br>
-    <button class="button login" type="button" onclick="window.location.href='index.php'">Cadastrar</button><br>
-    <button class="button cadastrar" type="button" onclick="window.location.href='index.php'">Sair</button>
+    <img src="img/consults_logo.svg" id="logo" alt="Consults logo"><br><br><br>
+
+    <form id="frmRegister">
+
+      <input type="email" id="email" onblur="validacaoEmail(frmRegister.email)" placeholder="E-mail"><br>
+      <input type="password" id="senha" minlength="8" required maxlength="32" placeholder="Senha"><br>
+      <input type="password" id="senharec"  minlength="8" required maxlength="32" placeholder="Confirmar senha"><br>
+      <input type="email" id="emailrec" onblur="validacaoEmail(frmRegister.email)" placeholder="E-mail de recuperação"><br>
+
+      <br>
+      <div id="msgemail"></div>
+      <br>
+
+      <button class="button login" type="button" onclick="changePage('index.php')">Cadastrar</button><br>
+    </form>
+
+    <button class="button cadastrar" type="button" onclick="changePage('index.php')">Sair</button>
 
     </div>
   </div>
+
 </body>
 </html>

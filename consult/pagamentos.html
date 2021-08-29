@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/consult.css">
+  <link rel="stylesheet" href="../css/pagamentos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -15,27 +15,22 @@
 
 <body>
 
+  <script src="paymentValidation.js"></script>
+
   <ul>
     <img src="../img/consults_logo.svg" height="13%" width="13%" alt="Consults logo">
-    <li style="float:right"><a href="../index.php">Sair</a></li>
-    <li style="float:right"><a class="active"  href="">Pagamentos</a></li>
-    <li style="float:right"><a href="clientes.html">Clientes</a></li>
+    <li style="float:right"><a id="exit" onclick="changePage('../index.php')">Sair</a></li>
+    <li style="float:right"><a id="payment" class="active">Pagamentos</a></li>
+    <li style="float:right"><a id="customers" onclick="changePage('clientes.html')">Clientes</a></li>
   </ul>
 
   <div class="container">
     <div class="box">
-    <input type="text" id="fname" name="fname" value="" maxlength="11" placeholder="Digite o CPF do usuário"><br>
-    <br>
+      <p>Insira a data que deseja consultar os pagamentos:</p>
+      <input type="date" id="date" name="birthday">
+    <br><br>
     <button id="buscar" class="button buscar" type="button">Buscar</button>
     </div>
   </div>
-
-  <script>
-  document.getElementById("buscar").addEventListener("click", verificarValidade);
-
-  function verificarValidade() {
-    alert ("Cliente inválido");
-  }
-  </script>
 
 </html>

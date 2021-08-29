@@ -14,16 +14,30 @@
 </head>
 
 <body>
+  <script src="validation.js"></script>
+
   <div class="container">
     <div class="box">
     <img src="img/consults_logo.svg" alt="Consults logo"><br>
-    <input type="text" id="fname" name="fname" value=""  placeholder="E-mail/Matrícula"><br>
-    <input type="password" id="fname" name="fname" value=""  placeholder="Senha"><br>
-    <br>
-    <button class="button login" type="button" onclick="window.location.href='consult/clientes.html'">Entrar</button><br>
-    <button class="button cadastrar" type="button" onclick="window.location.href='register.html'">Cadastrar</button>
+    <form id="frmLogin">
+      <input type="email" id="email" onblur="validacaoEmail(frmRegister.email)" placeholder="E-mail"><br>
+      <input type="password" id="senha" minlength="8" required maxlength="32" placeholder="Senha"><br><br>
+      <button class="button login" type="button" id="login">Entrar</button><br>
+    </form>
+    <button class="button cadastrar" type="button" id="register">Cadastrar</button>
 
     </div>
   </div>
+
+  <script>
+  document.getElementById("login").addEventListener("click", function(){changePage("consult/clientes.html");});
+  document.getElementById("register").addEventListener("click", function(){changePage("register.html");});
+  
+  function changePage(page) {
+    location.href = page;
+  }
+
+  </script>
+
 </body>
 </html>
