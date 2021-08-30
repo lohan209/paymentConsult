@@ -17,6 +17,55 @@ function validacaoEmail(field) {
     }
 }
 
+function loginSystem(){
+  var empty = emptyFields('login');
+
+  if (empty == false){
+    changePage('consult/clientes.html');
+  }
+}
+
+function registerSystem(){
+  var empty = emptyFields('register')
+
+  if (empty == false){
+    changePage('home.html');
+  }
+}
+
+function emptyFields(page){
+  if(document.getElementById("email").value.length == 0)
+    {
+        alert("Preencha o e-mail!")
+        return true
+    }
+
+    if(document.getElementById("senha").value.length == 0)
+    {
+        alert("Preencha o senha")
+        return true
+    }
+    else{
+      if (page == "login"){
+        return false
+      }
+    }
+
+    if(document.getElementById("senharec").value.length == 0)
+    {
+        alert("Senhas não são a mesma!")
+        return true
+    }
+
+    if(document.getElementById("emailrec").value.length == 0)
+    {
+        alert("Insira um e-mail de recuperação")
+        return true
+    }
+
+    return false
+}
+
 function changePage(page) {
   location.href = page;
 }
