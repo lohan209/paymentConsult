@@ -107,13 +107,45 @@ input {
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-size: 18px;
+  background-color: white;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
 }
 
+
 input:placeholder-shown {
    font-style: italic;
 
+}
+
+img {
+    align-content: center;
+    height: 15%;
+    width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  img {
+    margin-top: 20px;
+    height: 10%;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+    border-right:0px solid #bbb;
+  }
+
+  li a {
+    display: block;
+    color: #45c7b0;
+    text-align: center;
+    margin-top: 20px;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+  }
 }
